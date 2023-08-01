@@ -1,46 +1,46 @@
-// 1¹ø: º¯¼ö¸¦ ¼±¾ğÇÏÁö¸¸ °ªÀ» ÇÒ´çÇÏÁö ¾ÊÀ½
+ï»¿// 1ë²ˆ: ë³€ìˆ˜ë¥¼ ì„ ì–¸í•˜ì§€ë§Œ ê°’ì„ í• ë‹¹í•˜ì§€ ì•ŠìŒ
 let variable1;
 
-// 2¹ø: º¯¼ö¿¡ null °ªÀ» ÇÒ´ç
+// 2ë²ˆ: ë³€ìˆ˜ì— null ê°’ì„ í• ë‹¹
 let variable2 = null;
 
-// 3¹ø: ÇÔ¼ö¿¡¼­ ¹İÈ¯°ªÀÌ ¾øÀ½ (¶Ç´Â ¹İÈ¯°ªÀÌ ¸í½ÃÀûÀ¸·Î undefinedÀÎ °æ¿ì)
+// 3ë²ˆ: í•¨ìˆ˜ì—ì„œ ë°˜í™˜ê°’ì´ ì—†ìŒ (ë˜ëŠ” ë°˜í™˜ê°’ì´ ëª…ì‹œì ìœ¼ë¡œ undefinedì¸ ê²½ìš°)
 function returnNothing() {
-    // ¾Æ¹« ÀÛ¾÷µµ ¼öÇàÇÏÁö ¾ÊÀ½
+    // ì•„ë¬´ ì‘ì—…ë„ ìˆ˜í–‰í•˜ì§€ ì•ŠìŒ
 }
 let variable3 = returnNothing();
 
-// 4¹ø: ÇÔ¼ö¿¡ Àü´ŞµÇÁö ¾ÊÀº ¸Å°³º¯¼ö
+// 4ë²ˆ: í•¨ìˆ˜ì— ì „ë‹¬ë˜ì§€ ì•Šì€ ë§¤ê°œë³€ìˆ˜
 function exampleFunction(parameter) {
     console.log(parameter);
 }
 let variable4 = exampleFunction();
 
-// 5¹ø: ¹è¿­ ¿ä¼Ò°¡ Á¸ÀçÇÏÁö ¾ÊÀ½
+// 5ë²ˆ: ë°°ì—´ ìš”ì†Œê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŒ
 let array = [1, 2, 3];
 let variable5 = array[10];
 
-// 1¹ø
+// 1ë²ˆ
 if (variable1 === undefined) {
     console.log("variable1 is undefined");
 }
 
-// 2¹ø
+// 2ë²ˆ
 if (variable2 === null) {
     console.log("variable2 is null");
 }
 
-// 3¹ø
+// 3ë²ˆ
 if (variable3 === undefined) {
     console.log("variable3 is undefined");
 }
 
-// 4¹ø
+// 4ë²ˆ
 if (variable4 === undefined) {
     console.log("variable4 is undefined");
 }
 
-// 5¹ø
+// 5ë²ˆ
 if (variable5 === undefined) {
     console.log("variable5 is undefined");
 }

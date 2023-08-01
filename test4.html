@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20230720 Html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- jQuery와 Owl Carousel 라이브러리 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <script src="test4.js"></script>
+    <header class="header">
+        <div class="gnb_wrap">
+            <h1><a href="" class="game-logo"><img src="img/logo.png"></a></h1>
+            <nav>
+                <ul class="nav">
+                    <li class="issue">
+                        <a href="">게임소식</a>
+                        <ul class="nav_sub">
+                            <!-- 생략 -->
+                        </ul>
+                    </li>
+                    <li class="gameinfo">
+                        <a href="">게임정보</a>
+                        <ul class="nav_sub">
+                            <!-- 생략 -->
+                        </ul>
+                    </li>
+                    <li class="community">
+                        <a href="">커뮤니티</a>
+                        <ul class="nav_sub">
+                            <!-- 생략 -->
+                        </ul>
+                    </li>
+                    <li class="ranking">
+                        <a href="">랭킹</a>
+                        <ul class="nav_sub">
+                            <!-- 생략 -->
+                        </ul>
+                    </li>
+                    <li class="pds">
+                        <a href="">자료실</a>
+                        <ul class="nav_sub">
+                            <!-- 생략 -->
+                        </ul>
+                    </li>
+                    <li class="help">
+                        <a href="">고객지원</a>
+                        <ul class="nav_sub">
+                            <!-- 생략 -->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="loginSection">
+                <a href="" onclick="CommonObject.SingleModule.CheckLogin();">게임ID 로그인</a>
+                <div class="find">
+                    <a href="" onclick="NgbMember.SearchgameID(156);">아이디 찾기</a>
+                    <span class="cur">|</span>
+                    <a href="" onclick="NgbMember.SearchgameID(156);">비밀번호 찾기</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="wrap_banner main">
+            <!-- 비주얼 랜덤 배너 -->
+            <div class="owl-carousel randomBanner owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item" style="width: 1920px;">
+                            <div class="banner_item">
+                                <a href="" target="_self">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="owl-item animated owl-animated-in fadeIn active" style="width: 1920px;">
+                            <div class="banner_item">
+                                <a href="" target="_self">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- 딱지형 배너 -->
+       <div class="cardBannerWrap">
+        <div class="owl-carousel cardBanner owl-loaded">
+            <div class="owl-stage-outer">
+            <div class="owl-stage">
+                <div class="owl-item">
+                    <div class="banner-item">
+                        <a href="#" target="_self">
+                            <img src="img/banner3.jpg" alt="딱지형 배너 이미지 1">
+                        </a>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="banner-item">
+                        <a href="#" target="_self">
+                            <img src="img/banner4.jpg" alt="딱지형 배너 이미지 2">
+                        </a>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="banner-item">
+                        <a href="#" target="_self">
+                            <img src="img/banner5.jpg" alt="딱지형 배너 이미지 3">
+                        </a>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="banner-item">
+                        <a href="#" target="_self">
+                            <img src="img/banner6.jpg" alt="딱지형 배너 이미지 4">
+                        </a>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="banner-item">
+                        <a href="#" target="_self">
+                            <img src="img/banner7.jpg" alt="딱지형 배너 이미지 5">
+                        </a>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="banner-item">
+                        <a href="#" target="_self">
+                            <img src="img/banner8.jpg" alt="딱지형 배너 이미지 6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div id="contents" class="mainPage" menunavi="0_0">
+            <section id="MainCon_1">
+                <div class="m_inner">
+                    <!-- 공지사항 -->
+                    <div class="main_notice">
+                        <h3>
+                            "공지사항"
+                            <a href="" class="more">
+                                "더보기"
+                            </a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <div class="subject">
+                                    <a href="">공지사항내용공지사항내용</a>
+                                    <strong>공지</strong>
+                                </div>
+                                <div class="date">
+                                    "공지올린시간"
+                                </div>
+                            </li>
+                            <!-- 나머지 공지사항 요소들도 동일하게 유지 -->
+                        </ul>
+                    </div>
+                    <!-- GM메가폰 -->
+                    <div class="mc_banner">
+                        <div class="owl-carousel gmMega owl-loaded">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    <div class="owl-item" style="width: 333px;">
+                                        <div class="list_item">
+                                            <a href="" target="_self">
+                                                <dl>
+                                                    <dt>
+                                                        <img src="img/g1.jpg" alt="가이드내용">
+                                                    </dt>
+                                                    <dd>
+                                                        <strong>GM메가폰</strong>
+                                                        <div>서비스 가이드 모음</div>
+                                                        <span>GM이름이 알려드려요!</span>
+                                                    </dd>
+                                                </dl>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 나머지 GM메가폰 요소들도 동일하게 유지 -->
+                                </div>
+                            </div>
+                            <div class="owl-nav disabled">
+                                <button type="button" role="presentation" class="owl-prev">
+                                    <span aria-label="Previous"><</span>
+                                </button>
+                                <button type="button" role="presentation" class="owl-next">
+                                    <span aria-label="Next">></span>
+                                </button>
+                            </div>
+                            <div class="owl-dots">
+                                <button role="button" class="owl-dot">
+                                    <span></span>
+                                </button>
+                                <!-- 나머지 GM메가폰 요소들의 owl-dot도 유지 -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 상점아이템 -->
+                    <div class="mc_banner">
+                        <div class="owl-carousel shopList owl-loaded">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    <div class="owl-item" style="width:333px;">
+                                        <div class="list_item">
+                                            <a href="" target="_self">
+                                                <dl>
+                                                    <dt>
+                                                        <img src="img/shop1.jpg" alt="상점아이템이름">
+                                                    </dt>
+                                                    <dd>
+                                                        <strong>상점 아이템</strong>
+                                                        <div>상점아이템이름</div>
+                                                        <span>상점아이템소개</span>
+                                                    </dd>
+                                                </dl>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 나머지 상점아이템 요소들도 동일하게 유지 -->
+                                </div>
+                            </div>
+                            <div class="owl-nav disabled">
+                                <button type="button" role="presentation" class="owl-prev">
+                                    <span aria-label="Previous"><</span>
+                                </button>
+                                <button type="button" role="presentation" class="owl-next">
+                                    <span aria-label="Next">></span>
+                                </button>
+                            </div>
+                            <div class="owl-dots">
+                                <button role="button" class="owl-dot">
+                                    <span></span>
+                                </button>
+                                <!-- 나머지 상점아이템 요소들의 owl-dot도 유지 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- MainCon_2 -->
+            <section id="MainCon_2">
+                <div class="m_inner">
+                    <!-- 신규,복귀,PC방 혜택배너 -->
+                    <div class="benefitBnr">
+                        <ul>
+                            <li class="style1 b1">
+                                <a href="">
+                                    <span>
+                                        <strong>"신규 모험가"</strong>"를 위한"<br>"특별한 혜택"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="style1 b2">
+                                <a href="">
+                                    <span>
+                                        <strong>"복귀 모험가"</strong>"를 위한"<br>"특별한 혜택"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="style1 b3">
+                                <a href="">
+                                    <span>
+                                        <strong>PC방 모험가</strong>를 위한<br>특별한 혜택
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="style2 b4">
+                                <a href="">
+                                    <span>
+                                        <strong>"가이드 보러가기"</strong>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 링크영역 -->
+                    <div class="guideLink">
+                        <ul>
+                            <li class="g1">
+                                <a href="">
+                                    <strong>가이드내용</strong>
+                                    <span>가이드내용</span>
+                                </a>
+                            </li>
+                            <li class="g2">
+                                <a href="">
+                                    <strong>가이드내용</strong>
+                                    <span>가이드내용</span>
+                                </a>
+                            </li>
+                            <li class="g3">
+                                <a href="">
+                                    <strong>가이드내용</strong>
+                                    <span>가이드내용</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+                <!-- MainCon_3 -->
+            <section id="MainCon_3" class="GameImg">
+                <!-- 캐릭터 정보 -->
+                <div class="m_inner">
+                    <dl>
+                        <dt>
+                            <!-- 여기에 dt 요소 내용을 추가하세요 (예: 이미지 삽입) -->
+                        </dt>
+                        <dd>
+                            <p>
+                                <!-- 여기에 캐릭터 정보 내용을 추가하세요 -->
+                            </p>
+                            <a href="" target="_blank">"자세히 보기"</a>
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="inner">
+            <div class="snsQuick">
+                <ul>
+                    <li class="fb"><a href="" target="_blank">공식 페이스북 바로가기</a></li>
+                    <li class="tw"><a href="" target="_blank">공식 트위터 바로가기</a></li>
+                    <li class="blog"><a href="" target="_blank">공식 블로그 바로가기</a></li>
+                    <li class="ytb"><a href="" target="_blank">공식 유튜브 바로가기</a></li>
+                </ul>
+            </div>
+            <ul class="identity">
+                <li class="company1"><a href="" target="_blank">COMPANY1</a></li>
+                <li class="company2"><a href="" target="_blank">COMPANY2</a></li>
+            </ul>
+            <ul class="fnb">
+                <li><a href="" target="_blank">회사소개</a></li>
+                <li><a href="" target="_blank">채용안내</a></li>
+                <li><a href="" target="_blank">이용약관</a></li>
+                <li><a href="">게임이용등급안내</a></li>
+                <li><a href="" target="_blank">개인정보처리방침</a></li>
+                <li><a href="" target="_blank">청소년보호정책</a></li>
+                <li><a href="">운영정책</a></li>
+                <li><a href="" target="_blank">확률형 아이템 목록</a></li>
+                <li><a href="">쿠폰입력</a></li>
+            </ul>
+            <address class="copyright">
+                <p>
+                    <span>회사이름 대표이름1</span>
+                    <span>회사1의 상세주소1</span>
+                    <span>회사1의 전화번호</span>
+                    <span>회사1의 팩스번호</span><br>
+                    <span>회사1의 메일주소</span>
+                    <span>회사1의 사업자등록번호</span>
+                    <span>회사1의 통신판매업 신고번호</span>
+                    <a href="">사업자정보확인</a>
+                    <br>
+                    <span>@ copy ~ 저작권 표시내용</span>
+                </p>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
