@@ -1,22 +1,17 @@
-﻿// 1번: 변수를 선언하지만 값을 할당하지 않음
 let variable1;
 
-// 2번: 변수에 null 값을 할당
 let variable2 = null;
 
-// 3번: 함수에서 반환값이 없음 (또는 반환값이 명시적으로 undefined인 경우)
 function returnNothing() {
     // 아무 작업도 수행하지 않음
 }
 let variable3 = returnNothing();
 
-// 4번: 함수에 전달되지 않은 매개변수
 function exampleFunction(parameter) {
     console.log(parameter);
 }
 let variable4 = exampleFunction();
 
-// 5번: 배열 요소가 존재하지 않음
 let array = [1, 2, 3];
 let variable5 = array[10];
 
